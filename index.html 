@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GoVenu — Discover. Book. Experience.</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7f9;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .search {
+      width: 100%;
+      max-width: 520px;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .events {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .events h2 {
+      margin-bottom: 25px;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .event-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .event-image {
+      height: 170px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+    }
+
+    .event-info {
+      padding: 20px;
+    }
+
+    .event-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .event-info p {
+      color: #666;
+      margin: 8px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 7px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .organizer {
+      background: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .organizer h2 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GoVenu</div>
+
+  <nav>
+    <a href="#">Events</a>
+    <a href="#">Sign In</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <h1>Discover. Book. Experience.</h1>
+
+  <p>Find amazing events and book your tickets online.</p>
+
+  <input
+    class="search"
+    type="text"
+    placeholder="Search events..."
+  >
+
+</section>
+
+<section class="events">
+
+  <h2>🔥 Upcoming Events</h2>
+
+  <div class="event-grid">
+
+    <div class="event-card">
+
+      <div class="event-image">
+        🎤
+      </div>
+
+      <div class="event-info">
+
+        <h3>Afrobeats Night</h3>
+
+        <p>📍 Lagos</p>
+        <p>📅 September 20, 2026</p>
+        <p>🎟️ From ₦5,000</p>
+
+        <a class="btn" href="#">
+          Get Ticket
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="event-card">
+
+      <div class="event-image">
+        🎮
+      </div>
+
+      <div class="event-info">
+
+        <h3>Gaming Tournament</h3>
+
+        <p>📍 Ogun</p>
+        <p>📅 October 4, 2026</p>
+        <p>🎟️ From ₦2,000</p>
+
+        <a class="btn" href="#">
+          Get Ticket
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="organizer">
+
+  <h2>Hosting an event?</h2>
+
+  <p>Sell your tickets online with GoVenu.</p>
+
+  <a class="btn" href="#">
+    List Your Event
+  </a>
+
+</section>
+
+<footer>
+
+  © 2026 GoVenu. All rights reserved.
+
+</footer>
+
+</body>
+</html>
