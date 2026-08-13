@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Event Details — GoVenu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .event-box {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .event-banner {
+      height: 260px;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+    }
+
+    .content {
+      padding: 25px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    .details {
+      line-height: 2;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .ticket-box {
+      margin-top: 25px;
+      padding: 20px;
+      background: #f5f6f8;
+      border-radius: 10px;
+    }
+
+    .ticket-box h2 {
+      margin-bottom: 15px;
+    }
+
+    .ticket {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GoVenu</div>
+</header>
+
+<div class="container">
+
+  <div class="event-box">
+
+    <div class="event-banner">
+      🎤
+    </div>
+
+    <div class="content">
+
+      <h1>Afrobeats Night</h1>
+
+      <div class="details">
+        📍 Lagos, Nigeria<br>
+        📅 September 20, 2026<br>
+        🕖 7:00 PM
+      </div>
+
+      <div class="description">
+        <h3>About this event</h3>
+
+        <p>
+          Get ready for an unforgettable night of music,
+          entertainment and good vibes.
+        </p>
+      </div>
+
+      <div class="ticket-box">
+
+        <h2>Choose Your Ticket</h2>
+
+        <div class="ticket">
+          <span>Regular</span>
+          <span class="price">₦5,000</span>
+        </div>
+
+        <div class="ticket">
+          <span>VIP</span>
+          <span class="price">₦10,000</span>
+        </div>
+
+        <button onclick="buyTicket()">
+          Continue to Buy Ticket
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 GoVenu. All rights reserved.
+</footer>
+
+<script>
+
+function buyTicket() {
+
+  alert(
+    "Ticket checkout will be connected to GoVenu payments next."
+  );
+
+}
+
+</script>
+
+</body>
+</html>
